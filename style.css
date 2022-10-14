@@ -172,4 +172,9 @@ label {
         padding: 5px;
     }
 }
+@media (min-width: 600px) {
+    img {
+        width: 20%;
+    }
+}
     

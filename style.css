@@ -4,9 +4,10 @@ body  {
     margin: 0px;
     border: 0px;
     padding: 0px;
-    }
-    
-h1  {
+}
+
+
+.jacky-balfour  {
     display: inline-block;
     margin: 60px;
     color: black;
@@ -28,6 +29,7 @@ nav {
     width: 100%;
     top: 0px;
     margin: 0px;
+    z-index: 2;
 }
 
 li  {
@@ -63,41 +65,49 @@ img {
     margin-bottom: 0px;
 
 }
-h2  {
+
+p  {
     padding-right: 15%;
     padding-left: 15%;
     text-align: left;
     font-size: 25px;
     font-family: 'Josefin Sans', sans-serif;
     padding-top: 20px;
- }
-#bold  {
-    font-style: italic;
- }
+    font-weight: bolder;
+}
 
- footer  {
+.italic  {
+    font-style: italic;
+}
+
+footer  {
     padding: 5px;
     display: flex;
     justify-content: center;
-    border-top: 1px solid   black;
+    border-top: 1px solid black;
 }
+
 .emailicon  {
     height: 10%;
     width: 10%;
     object-fit: contain;
 }
+
 .form   {
     margin: 10px auto;
     border: 2px solid black;
     padding: 10px;
 }
+
 label   {
     display: block;
 }
+
 input, textarea  {
     display: block;
     width: auto;
 }
+
 .textocentrado  {
     display: flex;
     justify-content: center;
@@ -141,14 +151,17 @@ button {
     transition: color 0.2s;
     margin-bottom: 20px;
 }
+
 button:hover  {
     background-color:  black;
     color: white; 
 }
-h3  {
+
+.contacttext  {
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
 }
+
 label {
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
@@ -157,10 +170,41 @@ label {
     background-color: black;
     color: white;
     padding: 10px;
-
 }
+
+.wrap-texto  {
+    position: absolute;
+    z-index: 0;
+    font-size: 40px;
+    left: calc(50% - 160px);
+    top: calc(50% - 35px);
+}
+
+.wrap-texto h2 {
+    margin: 0px;
+}
+
+.wrap-photo   {
+    position: relative;
+    z-index: 1;
+}
+.clear  {
+    padding-bottom: 1px;
+    position: relative;
+}
+.wrap   {
+    position: relative;
+}
+
+
+
+
+
+
+
+
 @media (max-width: 600px) {
-    h1  {
+    .jacky-balfour  {
         display: inline-block;
         margin: 15px;
         color: black;
@@ -172,9 +216,9 @@ label {
         padding: 5px;
     }
 }
+
 @media (min-width: 600px) {
     img {
         width: 20%;
     }
 }
-    

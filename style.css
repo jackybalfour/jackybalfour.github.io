@@ -6,7 +6,6 @@ body  {
     padding: 0px;
 }
 
-
 .jacky-balfour  {
     display: inline-block;
     margin: 60px;
@@ -59,7 +58,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 40%;
     padding: 20px;
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -79,7 +78,10 @@ p  {
 .italic  {
     font-style: italic;
 }
-
+.herelink  {
+    font-style: italic;
+    text-decoration: underline;
+}
 footer  {
     padding: 5px;
     display: flex;
@@ -87,10 +89,11 @@ footer  {
     border-top: 1px solid black;
 }
 
-.emailicon  {
+.icon-section  {
     height: 10%;
     width: 10%;
     object-fit: contain;
+    padding-top: 60px;
 }
 
 .form   {
@@ -139,17 +142,20 @@ input, textarea  {
     transition: 0.3s;
 }
 button {
+    text-align: center;
 	padding: 10px;
-	width: 200px;
+	width: 99%;
     background-color: transparent;
 	display: flexbox;
     justify-content: center;
+    align-items: center;
 	border: 1px solid black;
 	border-radius: 4px;
     color: black;
 	font-size: 0.8rem;
     transition: color 0.2s;
     margin-bottom: 20px;
+    font-family: sans-serif;
 }
 
 button:hover  {
@@ -157,9 +163,10 @@ button:hover  {
     color: white; 
 }
 
-.contacttext  {
+.titulo  {
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
 }
 
 label {
@@ -175,8 +182,8 @@ label {
 .wrap-texto  {
     position: absolute;
     z-index: 0;
-    font-size: 40px;
-    left: calc(50% - 160px);
+    font-size: 60px;
+    left: calc(50% - 260px);
     top: calc(50% - 35px);
 }
 
@@ -195,15 +202,75 @@ label {
 .wrap   {
     position: relative;
 }
+.uppercase  {
+    text-transform: uppercase;
+}
+.web{
+    margin-top: 30px;
+    width: 70%;
+    height: auto;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(images/work3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.webtext{
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 2rem;
+    color: white;
+}
+.web:hover{
+    box-shadow: 0 0 0 270px rgba(0, 0, 0, 0.8) inset;
+}
+.web:hover .webtext{
+    opacity: 1;
+    transform:scale(1);
+    color: white;
+}
+
+.web2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 70%;
+    height: auto;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(images/work4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.webtext{
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.8s;
+    font-size: 2rem;
+    color: white;
+}
+.web2:hover{
+    box-shadow: 0 0 0 270px rgba(0, 0, 0, 0.8) inset;
+}
+.web2:hover .webtext{
+    opacity: 1;
+    transform:scale(1);
+    color: white;
+}
 
 
 
 
 
-
-
-
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .jacky-balfour  {
         display: inline-block;
         margin: 15px;
@@ -215,10 +282,14 @@ label {
         font-size: 15px;
         padding: 5px;
     }
+    .wrap-texto  {
+        font-size: 30px;
+        left: calc(50% - 130px);
+}
 }
 
 @media (min-width: 600px) {
     img {
         width: 20%;
     }
-}
+}   
